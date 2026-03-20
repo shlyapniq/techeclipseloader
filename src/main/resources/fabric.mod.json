@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "techeclipse-loader",
+	"version": "${version}",
+	"name": "TechEclipse Loader",
+	"description": "Мод для загрузки сборки",
+	"authors": [
+		"shlyapniq"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/techeclipse-loader/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.shlyapniq.TechEclipseLoader"
+		],
+		"client": [
+			"com.shlyapniq.TechEclipseLoaderClient"
+		]
+	},
+	"mixins": [
+		"techeclipse-loader.client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
